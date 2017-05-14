@@ -15,6 +15,9 @@
 		AAF8E34B1EC89AD8001922B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8E3491EC89AD8001922B5 /* LaunchScreen.storyboard */; };
 		AAF8E3561EC89AD8001922B5 /* MADShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3551EC89AD8001922B5 /* MADShopsTests.swift */; };
 		AAF8E3661EC89D1B001922B5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3651EC89D1B001922B5 /* CoreDataStack.swift */; };
+		AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3781EC8B1A2001922B5 /* Shop+CoreDataProperties.swift */; };
+		AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */; };
+		AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		AAF8E3551EC89AD8001922B5 /* MADShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADShopsTests.swift; sourceTree = "<group>"; };
 		AAF8E3571EC89AD8001922B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF8E3651EC89D1B001922B5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AAF8E3781EC8B1A2001922B5 /* Shop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+JSONSerialization.swift"; sourceTree = "<group>"; };
+		AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,9 @@
 		AAF8E33C1EC89AD8001922B5 /* MADShops */ = {
 			isa = PBXGroup;
 			children = (
-				AAF8E3641EC89CF8001922B5 /* Utils */,
 				AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */,
+				AAF8E36B1EC8AD16001922B5 /* Models */,
+				AAF8E3641EC89CF8001922B5 /* Utils */,
 				AAF8E3601EC89BCC001922B5 /* ViewControllers */,
 				AAF8E3611EC89BE0001922B5 /* Storyboards */,
 				AAF8E3621EC89BFE001922B5 /* Config */,
@@ -140,6 +147,17 @@
 				AAF8E3651EC89D1B001922B5 /* CoreDataStack.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		AAF8E36B1EC8AD16001922B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */,
+				AAF8E3781EC8B1A2001922B5 /* Shop+CoreDataProperties.swift */,
+				AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */,
+			);
+			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF8E3401EC89AD8001922B5 /* ViewController.swift in Sources */,
+				AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */,
+				AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */,
+				AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */,
 				AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */,
 				AAF8E3461EC89AD8001922B5 /* MADShops.xcdatamodeld in Sources */,
 				AAF8E3661EC89D1B001922B5 /* CoreDataStack.swift in Sources */,
