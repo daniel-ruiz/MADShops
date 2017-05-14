@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 typealias JSONObject = [String: Any]
+typealias ShopsJSONResponse = [String: [JSONObject]]
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,32 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let context = CoreDataStack.sharedInstance.context
-        let endpoint = "http://madrid-shops.com/json_new/getShops.php"
-        let requestUrl = URL(string: endpoint)!
-        let data_task = URLSession.shared.dataTask(with: requestUrl) { (data, _, error) in
-            if let error = error {
-                print("Error while fetching shops: \(error.localizedDescription)")
-            }
-            
-            if let data = data,
-            let json = try? JSONSerialization.jsonObject(with: data, options: []) as! [String: [JSONObject]] {
-                
-                for shopJson in json["result"]! {
-                    // Initialize shops with context and shop JSON
-                    let shop = Shop(json: shopJson, context: context)
-                    print("Fetched: \(String(describing: shop.name))")
-                }
-                
-                print("Done fetching shops!")
-                
-            } else {
-                return print("No results 🙁...")
-            }
-            
-        }
-        
-        data_task.resume()
+        CacheManager.shared.cacheShops()
         return true
     }
 

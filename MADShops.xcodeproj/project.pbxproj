@@ -18,6 +18,8 @@
 		AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3781EC8B1A2001922B5 /* Shop+CoreDataProperties.swift */; };
 		AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */; };
 		AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */; };
+		AAF8E3801EC90EA6001922B5 /* MADShopsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37F1EC90EA6001922B5 /* MADShopsClient.swift */; };
+		AAF8E3821EC911A2001922B5 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3811EC911A2001922B5 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		AAF8E3781EC8B1A2001922B5 /* Shop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+JSONSerialization.swift"; sourceTree = "<group>"; };
 		AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AAF8E37F1EC90EA6001922B5 /* MADShopsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MADShopsClient.swift; sourceTree = "<group>"; };
+		AAF8E3811EC911A2001922B5 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				AAF8E3651EC89D1B001922B5 /* CoreDataStack.swift */,
+				AAF8E37F1EC90EA6001922B5 /* MADShopsClient.swift */,
+				AAF8E3811EC911A2001922B5 /* CacheManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -266,10 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF8E3401EC89AD8001922B5 /* ViewController.swift in Sources */,
+				AAF8E3821EC911A2001922B5 /* CacheManager.swift in Sources */,
 				AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */,
 				AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */,
 				AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */,
 				AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */,
+				AAF8E3801EC90EA6001922B5 /* MADShopsClient.swift in Sources */,
 				AAF8E3461EC89AD8001922B5 /* MADShops.xcdatamodeld in Sources */,
 				AAF8E3661EC89D1B001922B5 /* CoreDataStack.swift in Sources */,
 			);
