@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */; };
-		AAF8E3401EC89AD8001922B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33F1EC89AD8001922B5 /* ViewController.swift */; };
+		AAF8E3401EC89AD8001922B5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */; };
 		AAF8E3431EC89AD8001922B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8E3411EC89AD8001922B5 /* Main.storyboard */; };
 		AAF8E3461EC89AD8001922B5 /* MADShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3441EC89AD8001922B5 /* MADShops.xcdatamodeld */; };
 		AAF8E3481EC89AD8001922B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF8E3471EC89AD8001922B5 /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		AAF8E33A1EC89AD8001922B5 /* MADShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAF8E33F1EC89AD8001922B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AAF8E3421EC89AD8001922B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF8E3451EC89AD8001922B5 /* MADShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADShops.xcdatamodel; sourceTree = "<group>"; };
 		AAF8E3471EC89AD8001922B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		AAF8E3601EC89BCC001922B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AAF8E33F1EC89AD8001922B5 /* ViewController.swift */,
+				AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF8E3401EC89AD8001922B5 /* ViewController.swift in Sources */,
+				AAF8E3401EC89AD8001922B5 /* SplashViewController.swift in Sources */,
 				AAF8E3821EC911A2001922B5 /* CacheManager.swift in Sources */,
 				AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */,
 				AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */,
