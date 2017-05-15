@@ -20,6 +20,7 @@
 		AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */; };
 		AAF8E3801EC90EA6001922B5 /* MADShopsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E37F1EC90EA6001922B5 /* MADShopsClient.swift */; };
 		AAF8E3821EC911A2001922B5 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3811EC911A2001922B5 /* CacheManager.swift */; };
+		AAF8E3841EC9AEB2001922B5 /* ShopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E3831EC9AEB2001922B5 /* ShopsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		AAF8E37D1EC8EEA7001922B5 /* Shop+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AAF8E37F1EC90EA6001922B5 /* MADShopsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MADShopsClient.swift; sourceTree = "<group>"; };
 		AAF8E3811EC911A2001922B5 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		AAF8E3831EC9AEB2001922B5 /* ShopsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */,
+				AAF8E3831EC9AEB2001922B5 /* ShopsController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */,
 				AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */,
 				AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */,
+				AAF8E3841EC9AEB2001922B5 /* ShopsController.swift in Sources */,
 				AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */,
 				AAF8E3801EC90EA6001922B5 /* MADShopsClient.swift in Sources */,
 				AAF8E3461EC89AD8001922B5 /* MADShops.xcdatamodeld in Sources */,

@@ -21,34 +21,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="9Uy-ZA-1eY">
-                                <rect key="frame" x="81" y="256.5" width="213.5" height="154"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADShops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwL-TC-XCR">
-                                        <rect key="frame" x="0.0" y="0.0" width="213.5" height="48"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOr-Ve-Ke7">
-                                        <rect key="frame" x="39" y="112" width="136" height="42"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                        <state key="normal" title="Get Started!">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOr-Ve-Ke7">
+                                <rect key="frame" x="119" y="312" width="136" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Get Started!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2i9-gc-DEb" kind="show" id="eF2-Cj-308"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADShops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwL-TC-XCR">
+                                <rect key="frame" x="81" y="200" width="213.5" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-19-xCG">
-                                <rect key="frame" x="169" y="371" width="37" height="37"/>
+                                <rect key="frame" x="169" y="314.5" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ehM-19-xCG" firstAttribute="centerX" secondItem="VOr-Ve-Ke7" secondAttribute="centerX" id="3CF-9g-xK3"/>
-                            <constraint firstItem="9Uy-ZA-1eY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WlT-UD-bLs"/>
-                            <constraint firstItem="ehM-19-xCG" firstAttribute="centerY" secondItem="VOr-Ve-Ke7" secondAttribute="centerY" id="XYj-4H-mDO"/>
-                            <constraint firstItem="9Uy-ZA-1eY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qIQ-rb-xUW"/>
+                            <constraint firstItem="VOr-Ve-Ke7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0yR-ie-99L"/>
+                            <constraint firstItem="ehM-19-xCG" firstAttribute="centerX" secondItem="VOr-Ve-Ke7" secondAttribute="centerX" id="Lxs-yy-gSi"/>
+                            <constraint firstItem="RwL-TC-XCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cNp-6D-SmJ"/>
+                            <constraint firstItem="VOr-Ve-Ke7" firstAttribute="top" secondItem="RwL-TC-XCR" secondAttribute="bottom" constant="64" id="jfY-Sl-q4C"/>
+                            <constraint firstItem="ehM-19-xCG" firstAttribute="centerY" secondItem="VOr-Ve-Ke7" secondAttribute="centerY" id="wF2-JY-HRN"/>
+                            <constraint firstItem="VOr-Ve-Ke7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yct-AO-HFs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4hX-b6-ISA"/>
@@ -60,6 +60,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1279" y="785"/>
+        </scene>
+        <!--Shops Controller-->
+        <scene sceneID="f8T-XS-bgP">
+            <objects>
+                <viewController id="2i9-gc-DEb" customClass="ShopsController" customModule="MADShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GR7-Xp-YJL"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdG-Ti-5n4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mL4-ZQ-hgg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-eO-BTl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qdG-Ti-5n4" firstAttribute="top" secondItem="L6b-eO-BTl" secondAttribute="bottom" id="7fG-Th-l7h"/>
+                            <constraint firstAttribute="trailing" secondItem="L6b-eO-BTl" secondAttribute="trailing" id="KzM-6z-3re"/>
+                            <constraint firstItem="L6b-eO-BTl" firstAttribute="leading" secondItem="mL4-ZQ-hgg" secondAttribute="leading" id="Ugs-q8-SeM"/>
+                            <constraint firstItem="L6b-eO-BTl" firstAttribute="top" secondItem="mL4-ZQ-hgg" secondAttribute="top" id="hp2-Si-CLa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nag-eu-bQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264.8000000000002" y="784.85757121439292"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rrf-Y2-wor">

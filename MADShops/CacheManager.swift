@@ -45,12 +45,13 @@ class CacheManager {
     }
     
     
-    func cacheShops() {
+    func cacheShops(completion: (() -> ())?) {
+        // TODO: Check Internet connection!!
         guard alreadyCached == false else { return }
-
+        
         MADShopsClient().fetchShops { (json) in
             let context = CoreDataStack.sharedInstance.context
-
+            
             for shopJson in json["result"]! {
                 let shop = Shop(json: shopJson, context: context)
                 print("Fetched: \(String(describing: shop.name))")
@@ -64,7 +65,11 @@ class CacheManager {
                 self._alreadyCached = true
             }
             
+            guard let completion = completion else { return }
+            completion()
+            
         }
+        
     }
     
 }

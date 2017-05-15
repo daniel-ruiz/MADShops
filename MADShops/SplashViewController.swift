@@ -12,17 +12,34 @@ class SplashViewController: UIViewController {
 
     @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     @IBOutlet weak var startButton: UIButton!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        resetViewState()
+        performCaching()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func resetViewState() {
+        activitySpinner.isHidden = true
+        startButton.isHidden = true
     }
-
+    
+    func performCaching() {
+        if !CacheManager.shared.alreadyCached {
+            
+            activitySpinner.isHidden = false
+            activitySpinner.startAnimating()
+            
+            CacheManager.shared.cacheShops {
+                self.activitySpinner.stopAnimating()
+                self.activitySpinner.isHidden = true
+                self.startButton.isHidden = false
+            }
+            
+        } else {
+            self.startButton.isHidden = false
+        }
+    }
 
 }
 
