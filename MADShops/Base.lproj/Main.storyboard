@@ -95,7 +95,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="P1D-80-4Im" kind="show" id="TTH-60-0q2"/>
+                                                    <segue destination="P1D-80-4Im" kind="show" identifier="showShopDetail" id="TTH-60-0q2"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -130,15 +130,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MADShops" id="wKa-o0-zRd"/>
+                    <connections>
+                        <outlet property="tableView" destination="FG2-QF-hFe" id="4XI-tG-Isz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nag-eu-bQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3204" y="784.85757121439292"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop Detail Controller-->
         <scene sceneID="cuf-pA-HjA">
             <objects>
-                <viewController id="P1D-80-4Im" sceneMemberID="viewController">
+                <viewController id="P1D-80-4Im" customClass="ShopDetailController" customModule="MADShops" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IUp-Gq-YnH"/>
                         <viewControllerLayoutGuide type="bottom" id="wYs-cG-w32"/>

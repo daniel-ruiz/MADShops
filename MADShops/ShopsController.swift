@@ -11,6 +11,8 @@ import CoreData
 
 class ShopsController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+
     var context = CoreDataStack.sharedInstance.context
     var cachedShops: [Shop] {
         get {
@@ -25,6 +27,8 @@ class ShopsController: UIViewController {
             }
         }
     }
+    
+    
 
 }
 
@@ -50,5 +54,14 @@ extension ShopsController: UITableViewDataSource {
 }
 
 extension ShopsController: UITableViewDelegate {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showShopDetail" {
+            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
+                let controller = segue.destination as! ShopDetailController
+                controller.shop = cachedShops[indexPath.row]
+            }
+        }
+    }
     
 }
