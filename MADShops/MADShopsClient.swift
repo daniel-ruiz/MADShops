@@ -32,7 +32,7 @@ struct MADShopsClient {
                 completion(json)
                 
                 print("Done fetching shops!")
-                
+
             } else {
                 print("No results 🙁...")
             }

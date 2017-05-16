@@ -10,10 +10,14 @@ import Foundation
 import CoreData
 
 extension Shop {
-    convenience init(json: JSONObject, context: NSManagedObjectContext) {
+    convenience init(json: JSONObject, context: NSManagedObjectContext) throws {
         self.init(context: context)
         
-        name = json["name"] as? String
+        guard let name = json["name"] as? String else {
+            throw ShopSerializationError.missingName
+        }
+        
+        self.name = name.capitalized
         address = json["address"] as? String
         description_en = json["description_en"] as? String
         description_es = json["description_es"] as? String

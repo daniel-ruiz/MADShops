@@ -53,8 +53,12 @@ class CacheManager {
             let context = CoreDataStack.sharedInstance.context
             
             for shopJson in json["result"]! {
-                let shop = Shop(json: shopJson, context: context)
-                print("Fetched: \(String(describing: shop.name))")
+                do {
+                    let shop = try Shop(json: shopJson, context: context)
+                    print("Fetched: \(String(describing: shop.name))")
+                } catch {
+                    print("Couldn't fetch shop due to the following error: \(error.localizedDescription)")
+                }
             }
             
             if context.insertedObjects.count > 0 {
