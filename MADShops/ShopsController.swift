@@ -41,9 +41,13 @@ extension ShopsController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let shop = cachedShops[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath)
+        let cell: ShopCell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShopCell
         
-        cell.textLabel?.text = shop.name
+        if let shopName = shop.name, let logoData = shop.logo?.data {
+            cell.nameLabel?.text = shopName
+            cell.logoView.image = UIImage(data: logoData as Data)
+        }
+        
         
         return cell
     }
@@ -57,7 +61,7 @@ extension ShopsController: UITableViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showShopDetail" {
-            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
+            if let indexPath = self.tableView.indexPath(for: sender as! ShopCell) {
                 let controller = segue.destination as! ShopDetailController
                 controller.shop = cachedShops[indexPath.row]
             }
