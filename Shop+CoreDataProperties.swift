@@ -16,7 +16,6 @@ extension Shop {
         return NSFetchRequest<Shop>(entityName: "Shop")
     }
 
-    @NSManaged public var address: String?
     @NSManaged public var description_en: String?
     @NSManaged public var description_es: String?
     @NSManaged public var name: String?
@@ -24,5 +23,6 @@ extension Shop {
     @NSManaged public var opening_hours_es: String?
     @NSManaged public var logo: ShopLogo?
     @NSManaged public var locationImage: ShopLocationMap?
+    @NSManaged public var location: Location?
 
 }

@@ -62,6 +62,7 @@ class CacheManager {
             for shopJson in json["result"]! {
                 do {
                     let shop = try Shop(json: shopJson, context: context)
+                    shop.location = try? Location(json: shopJson, context: context)
                     
                     if let shopLogo = shopJson["logo_img"] as? String,
                         let logoUrl = URL(string: shopLogo) {
@@ -76,7 +77,7 @@ class CacheManager {
                     
                     if let shopLatitude = shopJson["gps_lat"] as? String,
                         let shopLongitude = shopJson["gps_lon"] as? String,
-                        let locationImageUrl = URL(string:"http://maps.googleapis.com/maps/api/staticmap?center=\(shopLatitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)),\(shopLongitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))&zoom=17&size=320x220&scale=2"){
+                        let locationImageUrl = URL(string:"https://maps.googleapis.com/maps/api/staticmap?center=\(shopLatitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)),\(shopLongitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))&zoom=17&size=320x220&scale=2"){
                         do {
                             let locationImageData = try Data(contentsOf: locationImageUrl)
                             shop.locationImage = ShopLocationMap(data: locationImageData as NSData, context: context)

@@ -14,11 +14,10 @@ extension Shop {
         self.init(context: context)
         
         guard let name = json["name"] as? String else {
-            throw ShopSerializationError.missingName
+            throw ShopSerializationError.missing("name")
         }
         
         self.name = name.capitalized
-        address = json["address"] as? String
         description_en = json["description_en"] as? String
         description_es = json["description_es"] as? String
         opening_hours_en = json["opening_hours_en"] as? String

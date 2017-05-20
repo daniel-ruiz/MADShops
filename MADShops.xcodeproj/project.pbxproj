@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA06824C1ED0B3F500CDCA4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA06824B1ED0B3F500CDCA4E /* MapKit.framework */; };
+		AA06824E1ED0B6A400CDCA4E /* ShopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06824D1ED0B6A400CDCA4E /* ShopAnnotation.swift */; };
 		AA31686B1ECC0F4C002E6AA5 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3168691ECC0F4C002E6AA5 /* Image+CoreDataClass.swift */; };
 		AA31686C1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */; };
 		AA31686E1ECC139C002E6AA5 /* ShopLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686D1ECC139C002E6AA5 /* ShopLogo.swift */; };
@@ -16,6 +18,9 @@
 		AA883BEA1ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BE61ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift */; };
 		AA883BEB1ED07D1E00D19247 /* ShopLogo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BE71ED07D1E00D19247 /* ShopLogo+CoreDataProperties.swift */; };
 		AA883BED1ED07D6B00D19247 /* ShopLocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BEC1ED07D6B00D19247 /* ShopLocationMap.swift */; };
+		AA883BF01ED08E9100D19247 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BEE1ED08E9100D19247 /* Location+CoreDataClass.swift */; };
+		AA883BF11ED08E9100D19247 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BEF1ED08E9100D19247 /* Location+CoreDataProperties.swift */; };
+		AA883BF31ED08ED400D19247 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BF21ED08ED400D19247 /* Location.swift */; };
 		AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */; };
 		AAF8E3401EC89AD8001922B5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */; };
 		AAF8E3431EC89AD8001922B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8E3411EC89AD8001922B5 /* Main.storyboard */; };
@@ -45,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA06824B1ED0B3F500CDCA4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA06824D1ED0B6A400CDCA4E /* ShopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopAnnotation.swift; sourceTree = "<group>"; };
 		AA3168691ECC0F4C002E6AA5 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA31686D1ECC139C002E6AA5 /* ShopLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopLogo.swift; sourceTree = "<group>"; };
@@ -54,6 +61,9 @@
 		AA883BE61ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopLogo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA883BE71ED07D1E00D19247 /* ShopLogo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopLogo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA883BEC1ED07D6B00D19247 /* ShopLocationMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopLocationMap.swift; sourceTree = "<group>"; };
+		AA883BEE1ED08E9100D19247 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA883BEF1ED08E9100D19247 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA883BF21ED08ED400D19247 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AAF8E33A1EC89AD8001922B5 /* MADShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA06824C1ED0B3F500CDCA4E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +105,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA06824A1ED0B3F500CDCA4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA06824B1ED0B3F500CDCA4E /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAF8E3311EC89AD8001922B5 = {
 			isa = PBXGroup;
 			children = (
 				AAF8E33C1EC89AD8001922B5 /* MADShops */,
 				AAF8E3541EC89AD8001922B5 /* MADShopsTests */,
 				AAF8E33B1EC89AD8001922B5 /* Products */,
+				AA06824A1ED0B3F500CDCA4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +204,8 @@
 		AAF8E36B1EC8AD16001922B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA883BEE1ED08E9100D19247 /* Location+CoreDataClass.swift */,
+				AA883BEF1ED08E9100D19247 /* Location+CoreDataProperties.swift */,
 				AA883BE41ED07D1E00D19247 /* ShopLocationMap+CoreDataClass.swift */,
 				AA883BE51ED07D1E00D19247 /* ShopLocationMap+CoreDataProperties.swift */,
 				AA883BE61ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift */,
@@ -197,6 +219,8 @@
 				AA31686D1ECC139C002E6AA5 /* ShopLogo.swift */,
 				AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */,
 				AA883BEC1ED07D6B00D19247 /* ShopLocationMap.swift */,
+				AA883BF21ED08ED400D19247 /* Location.swift */,
+				AA06824D1ED0B6A400CDCA4E /* ShopAnnotation.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -254,6 +278,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5QSHG3473C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AAF8E3501EC89AD8001922B5 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -311,12 +340,15 @@
 				AAF8E3401EC89AD8001922B5 /* SplashViewController.swift in Sources */,
 				AAF8E3821EC911A2001922B5 /* CacheManager.swift in Sources */,
 				AA3168711ECC14CC002E6AA5 /* ShopCell.swift in Sources */,
+				AA06824E1ED0B6A400CDCA4E /* ShopAnnotation.swift in Sources */,
 				AAF8E37E1EC8EEA7001922B5 /* Shop+CoreDataClass.swift in Sources */,
 				AA883BE81ED07D1E00D19247 /* ShopLocationMap+CoreDataClass.swift in Sources */,
 				AA31686E1ECC139C002E6AA5 /* ShopLogo.swift in Sources */,
 				AA883BE91ED07D1E00D19247 /* ShopLocationMap+CoreDataProperties.swift in Sources */,
 				AAF8E37A1EC8B1A2001922B5 /* Shop+CoreDataProperties.swift in Sources */,
 				AAF8E37C1EC8ED0C001922B5 /* Shop+JSONSerialization.swift in Sources */,
+				AA883BF31ED08ED400D19247 /* Location.swift in Sources */,
+				AA883BF11ED08E9100D19247 /* Location+CoreDataProperties.swift in Sources */,
 				AAF8E3841EC9AEB2001922B5 /* ShopsController.swift in Sources */,
 				AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */,
 				AAF8E3801EC90EA6001922B5 /* MADShopsClient.swift in Sources */,
@@ -327,6 +359,7 @@
 				AA883BEA1ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift in Sources */,
 				AA883BED1ED07D6B00D19247 /* ShopLocationMap.swift in Sources */,
 				AA883BEB1ED07D1E00D19247 /* ShopLogo+CoreDataProperties.swift in Sources */,
+				AA883BF01ED08E9100D19247 /* Location+CoreDataClass.swift in Sources */,
 				AA31686C1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

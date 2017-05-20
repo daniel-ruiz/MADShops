@@ -8,12 +8,17 @@
 
 import UIKit
 import CoreData
+import MapKit
 
 class ShopsController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mapView: MKMapView!
     
     let cellId = "ShopCell"
+    let regionRadius: CLLocationDistance = 1000
+    let madridLocation: CLLocation = CLLocation(latitude: 40.4165, longitude: -3.70256)
+    
     var context = CoreDataStack.sharedInstance.context
     var cachedShops: [Shop] {
         get {
@@ -27,6 +32,19 @@ class ShopsController: UIViewController {
                 return []
             }
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        mapView.delegate = self
+        centerMapOn(location: madridLocation)
+        mapView.addAnnotations(cachedShops.flatMap({ ShopAnnotation(shop: $0) }))
+    }
+    
+    private func centerMapOn(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 10, regionRadius * 10)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 
 }
@@ -67,4 +85,28 @@ extension ShopsController: UITableViewDelegate {
         }
     }
     
+}
+
+extension ShopsController: MKMapViewDelegate {
+    
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? ShopAnnotation else { return nil }
+        
+        let shopAnnotationID = "ShopAnnotationID"
+        let view: MKPinAnnotationView
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: shopAnnotationID
+            ) as? MKPinAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: shopAnnotationID)
+            view.image = #imageLiteral(resourceName: "Location Pin")
+            view.canShowCallout = true
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
+        }
+        
+        return view
+    }
 }

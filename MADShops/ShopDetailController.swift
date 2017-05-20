@@ -46,7 +46,7 @@ class ShopDetailController: UIViewController {
         if let locationImageData = shop?.locationImage?.data {
             locationImage.image = UIImage(data: locationImageData as Data)
         }
-        addressLabel.text = shop?.address
+        addressLabel.text = shop?.location?.address
         openingHoursLabel.text = shop?.opening_hours_en
         descriptionLabel.text = shop?.description_en
     }

@@ -78,9 +78,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-eO-BTl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Map Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="uwx-vx-tQb">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YmN-ZA-pG0">
                                         <rect key="frame" x="8" y="8" width="359" height="271"/>
-                                    </imageView>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </mapView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FG2-QF-hFe">
                                         <rect key="frame" x="8" y="295" width="359" height="300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,13 +140,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.17816031960000001" green="0.48272135560000001" blue="0.65121122629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="uwx-vx-tQb" firstAttribute="leading" secondItem="L6b-eO-BTl" secondAttribute="leadingMargin" id="JfN-OT-DZb"/>
-                                    <constraint firstItem="uwx-vx-tQb" firstAttribute="top" secondItem="L6b-eO-BTl" secondAttribute="top" constant="8" id="UNu-h0-GYS"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="uwx-vx-tQb" secondAttribute="trailing" id="WYS-qV-5D8"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="FG2-QF-hFe" secondAttribute="trailing" id="p4u-Sb-ANC"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="FG2-QF-hFe" secondAttribute="bottom" id="pXl-so-mXx"/>
                                     <constraint firstItem="FG2-QF-hFe" firstAttribute="leading" secondItem="L6b-eO-BTl" secondAttribute="leadingMargin" id="s83-5P-AIL"/>
-                                    <constraint firstItem="FG2-QF-hFe" firstAttribute="top" secondItem="uwx-vx-tQb" secondAttribute="bottom" constant="16" id="w5s-2c-zNn"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -163,6 +160,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="MADShops" id="wKa-o0-zRd"/>
                     <connections>
+                        <outlet property="mapView" destination="YmN-ZA-pG0" id="saP-d4-W62"/>
                         <outlet property="tableView" destination="FG2-QF-hFe" id="4XI-tG-Isz"/>
                     </connections>
                 </viewController>
@@ -344,6 +342,5 @@
     <resources>
         <image name="Location Pin" width="26" height="40"/>
         <image name="Location Placeholder" width="640" height="440"/>
-        <image name="Map Placeholder" width="698" height="535"/>
     </resources>
 </document>

@@ -9,5 +9,5 @@
 import Foundation
 
 enum ShopSerializationError: Error {
-    case missingName
+    case missing(String)
 }
