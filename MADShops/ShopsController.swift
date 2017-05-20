@@ -12,7 +12,8 @@ import CoreData
 class ShopsController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
+    let cellId = "ShopCell"
     var context = CoreDataStack.sharedInstance.context
     var cachedShops: [Shop] {
         get {
@@ -27,8 +28,6 @@ class ShopsController: UIViewController {
             }
         }
     }
-    
-    
 
 }
 
@@ -41,7 +40,7 @@ extension ShopsController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let shop = cachedShops[indexPath.row]
-        let cell: ShopCell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShopCell
+        let cell: ShopCell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ShopCell
         
         if let shopName = shop.name, let logoData = shop.logo?.data {
             cell.nameLabel?.text = shopName

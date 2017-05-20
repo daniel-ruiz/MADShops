@@ -86,15 +86,46 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="axe-Mr-tWa"/>
                                         </constraints>
+                                        <color key="separatorColor" red="0.17816031960000001" green="0.48272135560000001" blue="0.65121122629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.81860376547121394" green="0.82670875324815662" blue="0.82670875324815662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopCell" id="UUt-3b-UEg" customClass="ShopCell" customModule="MADShops" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShopCell" id="UUt-3b-UEg" customClass="ShopCell" customModule="MADShops" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="359" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UUt-3b-UEg" id="ALs-DX-tdD">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-Q0-f0t">
+                                                            <rect key="frame" x="0.0" y="-1" width="64" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="64" id="uMO-7q-8CQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W24-hL-Vh0">
+                                                            <rect key="frame" x="80" y="8" width="271" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                            <color key="textColor" red="0.91437979003078396" green="0.92343305527861352" blue="0.92343305527861352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="W24-hL-Vh0" firstAttribute="centerY" secondItem="ALs-DX-tdD" secondAttribute="centerY" id="1G5-oU-qCT"/>
+                                                        <constraint firstItem="W24-hL-Vh0" firstAttribute="top" secondItem="ALs-DX-tdD" secondAttribute="topMargin" id="CJP-jU-9WG"/>
+                                                        <constraint firstItem="W24-hL-Vh0" firstAttribute="leading" secondItem="b7a-Q0-f0t" secondAttribute="trailing" constant="16" id="G5o-bU-Txx"/>
+                                                        <constraint firstItem="b7a-Q0-f0t" firstAttribute="centerY" secondItem="ALs-DX-tdD" secondAttribute="centerY" id="Gf9-Jr-B9r"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="W24-hL-Vh0" secondAttribute="bottom" id="Wx5-Ol-AT2"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="W24-hL-Vh0" secondAttribute="trailing" id="gHd-so-usU"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <constraints>
+                                                    <constraint firstItem="b7a-Q0-f0t" firstAttribute="leading" secondItem="UUt-3b-UEg" secondAttribute="leading" id="aA2-cQ-MlS"/>
+                                                    <constraint firstItem="b7a-Q0-f0t" firstAttribute="height" secondItem="UUt-3b-UEg" secondAttribute="height" id="daw-zw-KSz"/>
+                                                </constraints>
                                                 <connections>
+                                                    <outlet property="logoView" destination="b7a-Q0-f0t" id="hBx-mu-1vB"/>
+                                                    <outlet property="nameLabel" destination="W24-hL-Vh0" id="g4A-az-uiG"/>
                                                     <segue destination="P1D-80-4Im" kind="show" identifier="showShopDetail" id="TTH-60-0q2"/>
                                                 </connections>
                                             </tableViewCell>
@@ -105,7 +136,7 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17816031960000001" green="0.48272135560000001" blue="0.65121122629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="uwx-vx-tQb" firstAttribute="leading" secondItem="L6b-eO-BTl" secondAttribute="leadingMargin" id="JfN-OT-DZb"/>
                                     <constraint firstItem="uwx-vx-tQb" firstAttribute="top" secondItem="L6b-eO-BTl" secondAttribute="top" constant="8" id="UNu-h0-GYS"/>

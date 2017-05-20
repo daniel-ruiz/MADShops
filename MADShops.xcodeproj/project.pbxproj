@@ -11,7 +11,6 @@
 		AA31686C1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */; };
 		AA31686E1ECC139C002E6AA5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686D1ECC139C002E6AA5 /* Image.swift */; };
 		AA3168711ECC14CC002E6AA5 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */; };
-		AA3168721ECC14CC002E6AA5 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3168701ECC14CC002E6AA5 /* ShopCell.xib */; };
 		AAF8E33E1EC89AD8001922B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */; };
 		AAF8E3401EC89AD8001922B5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */; };
 		AAF8E3431EC89AD8001922B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8E3411EC89AD8001922B5 /* Main.storyboard */; };
@@ -45,7 +44,6 @@
 		AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA31686D1ECC139C002E6AA5 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
-		AA3168701ECC14CC002E6AA5 /* ShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
 		AAF8E33A1EC89AD8001922B5 /* MADShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MADShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8E33D1EC89AD8001922B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF8E33F1EC89AD8001922B5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -86,16 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA3168731ECC14DE002E6AA5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */,
-				AA3168701ECC14CC002E6AA5 /* ShopCell.xib */,
-			);
-			name = Views;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		AAF8E3311EC89AD8001922B5 = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +109,6 @@
 				AAF8E36B1EC8AD16001922B5 /* Models */,
 				AAF8E3641EC89CF8001922B5 /* Utils */,
 				AAF8E3601EC89BCC001922B5 /* ViewControllers */,
-				AA3168731ECC14DE002E6AA5 /* Views */,
 				AAF8E3611EC89BE0001922B5 /* Storyboards */,
 				AAF8E3621EC89BFE001922B5 /* Config */,
 				AAF8E3631EC89C07001922B5 /* CoreData */,
@@ -194,6 +181,7 @@
 				AAF8E37B1EC8ED0C001922B5 /* Shop+JSONSerialization.swift */,
 				AAF8E3851ECAB740001922B5 /* ShopSerializationError.swift */,
 				AA31686D1ECC139C002E6AA5 /* Image.swift */,
+				AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -287,7 +275,6 @@
 				AAF8E34B1EC89AD8001922B5 /* LaunchScreen.storyboard in Resources */,
 				AAF8E3481EC89AD8001922B5 /* Assets.xcassets in Resources */,
 				AAF8E3431EC89AD8001922B5 /* Main.storyboard in Resources */,
-				AA3168721ECC14CC002E6AA5 /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
