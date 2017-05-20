@@ -18,6 +18,7 @@ class ShopsController: UIViewController {
     let cellId = "ShopCell"
     let regionRadius: CLLocationDistance = 1000
     let madridLocation: CLLocation = CLLocation(latitude: 40.4165, longitude: -3.70256)
+    var locationManager = CLLocationManager()
     
     var context = CoreDataStack.sharedInstance.context
     var cachedShops: [Shop] {
@@ -37,6 +38,17 @@ class ShopsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLocationServices()
+        setupMapView()
+    }
+    
+    private func setupLocationServices() {
+        checkLocationAuthorizationStatus()
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
+    }
+    
+    private func setupMapView() {
         mapView.delegate = self
         centerMapOn(location: madridLocation)
         mapView.addAnnotations(cachedShops.flatMap({ ShopAnnotation(shop: $0) }))
@@ -45,6 +57,14 @@ class ShopsController: UIViewController {
     private func centerMapOn(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 10, regionRadius * 10)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    private func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 
 }
@@ -119,3 +139,5 @@ extension ShopsController: MKMapViewDelegate {
         self.navigationController?.pushViewController(shopDetailVC, animated: true)
     }
 }
+
+extension ShopsController: CLLocationManagerDelegate {}
