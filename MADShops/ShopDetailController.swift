@@ -47,7 +47,7 @@ class ShopDetailController: UIViewController {
             locationImage.image = UIImage(data: locationImageData as Data)
         }
         addressLabel.text = shop?.location?.address
-        openingHoursLabel.text = shop?.opening_hours_en
-        descriptionLabel.text = shop?.description_en
+        openingHoursLabel.text = (NSLocale.preferredLanguages.first?.contains("es"))! ? shop?.opening_hours_es : shop?.opening_hours_en
+        descriptionLabel.text = (NSLocale.preferredLanguages.first?.contains("es"))! ? shop?.description_es : shop?.description_en
     }
 }

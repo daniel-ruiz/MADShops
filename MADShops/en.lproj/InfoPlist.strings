@@ -1,0 +1,9 @@
+/*
+ InfoPlist.strings
+ MADShops
+ 
+ Created by Daniel Ruiz on 21/05/2017.
+ Copyright © 2017 Daniel Ruiz. All rights reserved.
+ */
+
+"NSLocationWhenInUseUsageDescription" = "MADShops tracks your position in order to guide you to the next cool shop in Madrid";

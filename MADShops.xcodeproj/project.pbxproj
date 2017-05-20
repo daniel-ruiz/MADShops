@@ -13,6 +13,7 @@
 		AA31686C1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */; };
 		AA31686E1ECC139C002E6AA5 /* ShopLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686D1ECC139C002E6AA5 /* ShopLogo.swift */; };
 		AA3168711ECC14CC002E6AA5 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */; };
+		AA64643D1ED1001800104867 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA64643F1ED1001800104867 /* InfoPlist.strings */; };
 		AA883BE81ED07D1E00D19247 /* ShopLocationMap+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BE41ED07D1E00D19247 /* ShopLocationMap+CoreDataClass.swift */; };
 		AA883BE91ED07D1E00D19247 /* ShopLocationMap+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BE51ED07D1E00D19247 /* ShopLocationMap+CoreDataProperties.swift */; };
 		AA883BEA1ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883BE61ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift */; };
@@ -52,10 +53,16 @@
 /* Begin PBXFileReference section */
 		AA06824B1ED0B3F500CDCA4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AA06824D1ED0B6A400CDCA4E /* ShopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopAnnotation.swift; sourceTree = "<group>"; };
+		AA0682501ED0F3CB00CDCA4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		AA0682511ED0F4B700CDCA4E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		AA3168691ECC0F4C002E6AA5 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA31686A1ECC0F4C002E6AA5 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA31686D1ECC139C002E6AA5 /* ShopLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopLogo.swift; sourceTree = "<group>"; };
 		AA31686F1ECC14CC002E6AA5 /* ShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		AA6464371ED0FE7300104867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		AA64643E1ED1001800104867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA6464401ED1001900104867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA6464411ED1002200104867 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA883BE41ED07D1E00D19247 /* ShopLocationMap+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopLocationMap+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA883BE51ED07D1E00D19247 /* ShopLocationMap+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopLocationMap+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA883BE61ED07D1E00D19247 /* ShopLogo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopLogo+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -71,7 +78,6 @@
 		AAF8E3451EC89AD8001922B5 /* MADShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MADShops.xcdatamodel; sourceTree = "<group>"; };
 		AAF8E3471EC89AD8001922B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF8E34A1EC89AD8001922B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AAF8E34C1EC89AD8001922B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF8E3511EC89AD8001922B5 /* MADShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MADShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8E3551EC89AD8001922B5 /* MADShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADShopsTests.swift; sourceTree = "<group>"; };
 		AAF8E3571EC89AD8001922B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,7 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				AAF8E3471EC89AD8001922B5 /* Assets.xcassets */,
-				AAF8E34C1EC89AD8001922B5 /* Info.plist */,
+				AA6464381ED0FE7300104867 /* Info.plist */,
+				AA64643F1ED1001800104867 /* InfoPlist.strings */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = AAF8E3311EC89AD8001922B5;
 			productRefGroup = AAF8E33B1EC89AD8001922B5 /* Products */;
@@ -317,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF8E34B1EC89AD8001922B5 /* LaunchScreen.storyboard in Resources */,
+				AA64643D1ED1001800104867 /* InfoPlist.strings in Resources */,
 				AAF8E3481EC89AD8001922B5 /* Assets.xcassets in Resources */,
 				AAF8E3431EC89AD8001922B5 /* Main.storyboard in Resources */,
 			);
@@ -383,10 +392,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AA6464381ED0FE7300104867 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6464371ED0FE7300104867 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		AA64643F1ED1001800104867 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA64643E1ED1001800104867 /* Base */,
+				AA6464401ED1001900104867 /* en */,
+				AA6464411ED1002200104867 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		AAF8E3411EC89AD8001922B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AAF8E3421EC89AD8001922B5 /* Base */,
+				AA0682501ED0F3CB00CDCA4E /* en */,
+				AA0682511ED0F4B700CDCA4E /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -406,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -456,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

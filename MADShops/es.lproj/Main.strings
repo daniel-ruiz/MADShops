@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Monday to Saturday: 10: 00-20: 30 Sunday  11:00-20:00h"; ObjectID = "O1F-DN-AnK"; */
+"O1F-DN-AnK.text" = "Monday to Saturday: 10: 00-20: 30 Sunday  11:00-20:00h";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "Psa-Kt-gtI"; */
+"Psa-Kt-gtI.text" = "Dirección";
+
+/* Class = "UILabel"; text = "MADShops"; ObjectID = "RwL-TC-XCR"; */
+"RwL-TC-XCR.text" = "MADShops";
+
+/* Class = "UILabel"; text = "The Blahnik footwear collection is  well known from the Spanish creator of the Manolo Blahnik.  The fame of the shoes designed by Blahnik is worldwide.  Madrid has one of the very few stores that exist in the world. \\n\\nWithout going  further, in several films we have  references to \\\"Malonos\\\" as objects of desire for the  film stars.  Even singers like Madonna or Kalie Minogue have expressed their interest in  this type of footwear. \\n"; ObjectID = "Ux2-ZR-kee"; */
+"Ux2-ZR-kee.text" = "The Blahnik footwear collection is  well known from the Spanish creator of the Manolo Blahnik.  The fame of the shoes designed by Blahnik is worldwide.  Madrid has one of the very few stores that exist in the world. \\n\\nWithout going  further, in several films we have  references to \\\"Malonos\\\" as objects of desire for the  film stars.  Even singers like Madonna or Kalie Minogue have expressed their interest in  this type of footwear. \\n";
+
+/* Class = "UIButton"; normalTitle = "Get Started!"; ObjectID = "VOr-Ve-Ke7"; */
+"VOr-Ve-Ke7.normalTitle" = "Empezar";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "W24-hL-Vh0"; */
+"W24-hL-Vh0.text" = "Label";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "fW3-Bv-8TU"; */
+"fW3-Bv-8TU.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Calle de Serrano, 58"; ObjectID = "kiD-eM-Jgk"; */
+"kiD-eM-Jgk.text" = "Calle de Serrano, 58";
+
+/* Class = "UILabel"; text = "Opening Hours"; ObjectID = "rYS-Sx-b9f"; */
+"rYS-Sx-b9f.text" = "Horario";
+
+/* Class = "UINavigationItem"; title = "MADShops"; ObjectID = "wKa-o0-zRd"; */
+"wKa-o0-zRd.title" = "MADShops";

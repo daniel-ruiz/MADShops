@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MADShops
+
+  Created by Daniel Ruiz on 21/05/2017.
+  Copyright © 2017 Daniel Ruiz. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "MADShops usa tu ubicación para guiarte por Madrid hacia la tienda molona más cercana";
