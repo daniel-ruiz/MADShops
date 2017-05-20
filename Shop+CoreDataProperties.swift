@@ -2,7 +2,7 @@
 //  Shop+CoreDataProperties.swift
 //  MADShops
 //
-//  Created by Daniel Ruiz on 17/05/2017.
+//  Created by Daniel Ruiz on 20/05/2017.
 //  Copyright © 2017 Daniel Ruiz. All rights reserved.
 //
 
@@ -20,6 +20,8 @@ extension Shop {
     @NSManaged public var description_en: String?
     @NSManaged public var description_es: String?
     @NSManaged public var name: String?
+    @NSManaged public var opening_hours_en: String?
+    @NSManaged public var opening_hours_es: String?
     @NSManaged public var logo: Image?
 
 }

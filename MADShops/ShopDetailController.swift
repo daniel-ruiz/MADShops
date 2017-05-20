@@ -39,6 +39,7 @@ class ShopDetailController: UIViewController {
     private func syncViewWithShop() {
         title = shop?.name!
         addressLabel.text = shop?.address
+        openingHoursLabel.text = shop?.opening_hours_en
         descriptionLabel.text = shop?.description_en
     }
 }

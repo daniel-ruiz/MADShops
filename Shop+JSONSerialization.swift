@@ -21,5 +21,7 @@ extension Shop {
         address = json["address"] as? String
         description_en = json["description_en"] as? String
         description_es = json["description_es"] as? String
+        opening_hours_en = json["opening_hours_en"] as? String
+        opening_hours_es = json["opening_hours_es"] as? String
     }
 }

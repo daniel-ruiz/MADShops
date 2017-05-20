@@ -9,10 +9,12 @@
         <attribute name="description_en" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="description_es" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="opening_hours_en" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opening_hours_es" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="logo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="shop" inverseEntity="Image" syncable="YES"/>
     </entity>
     <elements>
         <element name="Image" positionX="-63" positionY="9" width="128" height="75"/>
-        <element name="Shop" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Shop" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>
