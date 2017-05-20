@@ -109,4 +109,13 @@ extension ShopsController: MKMapViewDelegate {
         
         return view
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let shopLocation = view.annotation as! ShopAnnotation
+        let shop = cachedShops.filter({ $0.name == shopLocation.name }).first
+        
+        let shopDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "ShopDetailController") as! ShopDetailController
+        shopDetailVC.shop = shop
+        self.navigationController?.pushViewController(shopDetailVC, animated: true)
+    }
 }

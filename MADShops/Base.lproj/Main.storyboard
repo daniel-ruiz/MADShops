@@ -171,7 +171,7 @@
         <!--Shop Detail Controller-->
         <scene sceneID="cuf-pA-HjA">
             <objects>
-                <viewController id="P1D-80-4Im" customClass="ShopDetailController" customModule="MADShops" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopDetailController" id="P1D-80-4Im" customClass="ShopDetailController" customModule="MADShops" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IUp-Gq-YnH"/>
                         <viewControllerLayoutGuide type="bottom" id="wYs-cG-w32"/>

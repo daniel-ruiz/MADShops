@@ -41,7 +41,7 @@ class ShopDetailController: UIViewController {
     }
     
     private func syncViewWithShop() {
-        title = shop?.name!
+        title = shop?.name
         
         if let locationImageData = shop?.locationImage?.data {
             locationImage.image = UIImage(data: locationImageData as Data)
