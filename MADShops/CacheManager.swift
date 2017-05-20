@@ -67,10 +67,22 @@ class CacheManager {
                         let logoUrl = URL(string: shopLogo) {
                         do {
                             let logoData = try Data(contentsOf: logoUrl)
-                            shop.logo = Image(data: logoData as NSData, context: context)
+                            shop.logo = ShopLogo(data: logoData as NSData, context: context)
                             print("Fetched logo of \(String(describing: shop.name))!")
                         } catch {
                             print("Could not fetch logo of \(String(describing: shop.name)): \(error.localizedDescription)")
+                        }
+                    }
+                    
+                    if let shopLatitude = shopJson["gps_lat"] as? String,
+                        let shopLongitude = shopJson["gps_lon"] as? String,
+                        let locationImageUrl = URL(string:"http://maps.googleapis.com/maps/api/staticmap?center=\(shopLatitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)),\(shopLongitude.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))&zoom=17&size=320x220&scale=2"){
+                        do {
+                            let locationImageData = try Data(contentsOf: locationImageUrl)
+                            shop.locationImage = ShopLocationMap(data: locationImageData as NSData, context: context)
+                            print("Fetched location image of \(String(describing: shop.name))!")
+                        } catch {
+                            print("Could not fetch location image of \(String(describing: shop.name)): \(error.localizedDescription)")
                         }
                     }
                     

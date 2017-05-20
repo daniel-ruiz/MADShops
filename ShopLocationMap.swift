@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-extension Image {
+extension ShopLocationMap {
     convenience init(data: NSData, context: NSManagedObjectContext) {
         self.init(context: context)
         self.data = data

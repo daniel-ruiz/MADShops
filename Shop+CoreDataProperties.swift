@@ -22,6 +22,7 @@ extension Shop {
     @NSManaged public var name: String?
     @NSManaged public var opening_hours_en: String?
     @NSManaged public var opening_hours_es: String?
-    @NSManaged public var logo: Image?
+    @NSManaged public var logo: ShopLogo?
+    @NSManaged public var locationImage: ShopLocationMap?
 
 }

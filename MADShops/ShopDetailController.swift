@@ -30,14 +30,22 @@ class ShopDetailController: UIViewController {
         super.init(coder: aDecoder)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        syncViewWithShop()
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        syncViewWithShop()
+        
     }
     
     private func syncViewWithShop() {
         title = shop?.name!
+        
+        if let locationImageData = shop?.locationImage?.data {
+            locationImage.image = UIImage(data: locationImageData as Data)
+        }
         addressLabel.text = shop?.address
         openingHoursLabel.text = shop?.opening_hours_en
         descriptionLabel.text = shop?.description_en
