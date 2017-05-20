@@ -10,6 +10,11 @@ import UIKit
 
 class ShopDetailController: UIViewController {
 
+    @IBOutlet weak var locationImage: UIImageView!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var openingHoursLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     var shop: Shop?
     
     convenience init() {
@@ -28,6 +33,12 @@ class ShopDetailController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.title = shop?.name!
+        syncViewWithShop()
+    }
+    
+    private func syncViewWithShop() {
+        title = shop?.name!
+        addressLabel.text = shop?.address
+        descriptionLabel.text = shop?.description_en
     }
 }
