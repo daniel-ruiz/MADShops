@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -183,7 +184,116 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-BN-XdC">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="1" green="0.57457532168838499" blue="0.47458927799054973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ph9-uO-wqA" userLabel="Location and Details">
+                                        <rect key="frame" x="24" y="265" width="327" height="418"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-bE-pNl" userLabel="Shop Details">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="418"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-yL-dKB" userLabel="Address">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psa-Kt-gtI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="327" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="t7t-tB-uXW"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle de Serrano, 58" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiD-eM-Jgk">
+                                                                <rect key="frame" x="0.0" y="29" width="327" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="kiD-eM-Jgk" firstAttribute="top" secondItem="Psa-Kt-gtI" secondAttribute="bottom" constant="8" id="5FG-gJ-d93"/>
+                                                            <constraint firstItem="kiD-eM-Jgk" firstAttribute="width" secondItem="2VJ-yL-dKB" secondAttribute="width" id="Tii-v2-h5L"/>
+                                                            <constraint firstItem="Psa-Kt-gtI" firstAttribute="width" secondItem="kiD-eM-Jgk" secondAttribute="width" id="chZ-Cy-Ez1"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fcv-N7-eFX" userLabel="Opening Hours">
+                                                        <rect key="frame" x="0.0" y="58" width="327" height="71"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYS-Sx-b9f">
+                                                                <rect key="frame" x="0.0" y="0.0" width="327" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="XGi-vT-LOd"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday to Saturday: 10: 00-20: 30 Sunday  11:00-20:00h" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1F-DN-AnK">
+                                                                <rect key="frame" x="0.0" y="29" width="327" height="42"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="O1F-DN-AnK" firstAttribute="top" secondItem="rYS-Sx-b9f" secondAttribute="bottom" constant="8" id="2TK-fp-Mjr"/>
+                                                            <constraint firstItem="O1F-DN-AnK" firstAttribute="width" secondItem="fcv-N7-eFX" secondAttribute="width" id="39O-cv-qgE"/>
+                                                            <constraint firstItem="rYS-Sx-b9f" firstAttribute="width" secondItem="O1F-DN-AnK" secondAttribute="width" id="7Qn-rC-JuE"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="OkX-Mh-KL5" userLabel="Description">
+                                                        <rect key="frame" x="0.0" y="137" width="327" height="281"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-Bv-8TU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="327" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="l7m-P7-2Qf"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux2-ZR-kee">
+                                                                <rect key="frame" x="0.0" y="29" width="327" height="252"/>
+                                                                <string key="text">The Blahnik footwear collection is  well known from the Spanish creator of the Manolo Blahnik.  The fame of the shoes designed by Blahnik is worldwide.  Madrid has one of the very few stores that exist in the world. \n\nWithout going  further, in several films we have  references to \"Malonos\" as objects of desire for the  film stars.  Even singers like Madonna or Kalie Minogue have expressed their interest in  this type of footwear. \n</string>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.81860376550000002" green="0.82670875320000003" blue="0.82670875320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="fW3-Bv-8TU" firstAttribute="width" secondItem="Ux2-ZR-kee" secondAttribute="width" id="PAn-a7-wsX"/>
+                                                            <constraint firstItem="Ux2-ZR-kee" firstAttribute="top" secondItem="fW3-Bv-8TU" secondAttribute="bottom" constant="8" id="QJv-e1-oRM"/>
+                                                            <constraint firstItem="Ux2-ZR-kee" firstAttribute="width" secondItem="OkX-Mh-KL5" secondAttribute="width" id="jp5-Os-o2y"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="fcv-N7-eFX" firstAttribute="width" secondItem="q9X-bE-pNl" secondAttribute="width" id="aDf-0t-rGN"/>
+                                                    <constraint firstItem="2VJ-yL-dKB" firstAttribute="width" secondItem="q9X-bE-pNl" secondAttribute="width" id="t8l-UX-fmR"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OkX-Mh-KL5" firstAttribute="width" secondItem="Ph9-uO-wqA" secondAttribute="width" id="fdy-Ye-zLu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="rRO-XQ-dBz">
+                                        <rect key="frame" x="24" y="24" width="327" height="225"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rRO-XQ-dBz" secondAttribute="height" multiplier="320:220" id="Xkf-h4-4u5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17816031960000001" green="0.48272135560000001" blue="0.65121122629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ph9-uO-wqA" firstAttribute="leading" secondItem="HUt-BN-XdC" secondAttribute="leadingMargin" constant="16" id="63D-QX-809"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ph9-uO-wqA" secondAttribute="trailing" constant="16" id="C8B-jn-Mhb"/>
+                                    <constraint firstItem="rRO-XQ-dBz" firstAttribute="leading" secondItem="HUt-BN-XdC" secondAttribute="leadingMargin" constant="16" id="D1s-bs-e4R"/>
+                                    <constraint firstItem="rRO-XQ-dBz" firstAttribute="top" secondItem="HUt-BN-XdC" secondAttribute="topMargin" constant="16" id="QL9-31-DFE"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="rRO-XQ-dBz" secondAttribute="trailing" constant="16" id="md8-CJ-uhu"/>
+                                    <constraint firstItem="Ph9-uO-wqA" firstAttribute="top" secondItem="rRO-XQ-dBz" secondAttribute="bottom" constant="16" id="xna-aQ-tnw"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -219,6 +329,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Location Placeholder" width="640" height="440"/>
         <image name="Map Placeholder" width="698" height="535"/>
     </resources>
 </document>
